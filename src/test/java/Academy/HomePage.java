@@ -25,7 +25,7 @@ public class HomePage extends base{//inherit base class properties
 	
 	@Test(dataProvider="getData")
 	
-	public void basePageNavigation(String username,String password,String text) throws IOException, InterruptedException {
+	public void basePageLogin(String username,String password,String text) throws IOException, InterruptedException {
 		
 		//driver.get("http://www.qaclickacademy.com");
 		driver.get(prop.getProperty("url"));

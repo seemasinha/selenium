@@ -25,7 +25,7 @@ public class ValidateNavBar extends base{//inherit base class properties
 	
 	@Test
 	
-	public void basePageNavigation() throws IOException {
+	public void PageNavigation() throws IOException {
 		LandingPage l=new LandingPage(driver);//creating object of the class to access methods
 		
 	  //check navigation bar is present

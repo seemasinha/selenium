@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.ValidateTitle" class="method navigator-link" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,17 +102,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(non-restricted@user, nrpassword, NR)">basePageNavigation(non-restricted@user, nrpassword, NR)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Academy.ValidateNavBar" class="method navigator-link" hash-for-method="PageNavigation">PageNavigation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(restricted@user, rpassword, R)">basePageNavigation(restricted@user, rpassword, R)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageLogin(non-restricted@user, nrpassword, NR)">basePageLogin(non-restricted@user, nrpassword, NR)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.ValidateNavBar" class="method navigator-link" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageLogin(restricted@user, rpassword, R)">basePageLogin(restricted@user, rpassword, R)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Academy.ValidateTitle" class="method navigator-link" hash-for-method="basePageValidateTitle">basePageValidateTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,25 +132,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Academy.ValidateTitle</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [FEATURED COURSES123] but found [FEATURED COURSES]
-	at Academy.ValidateTitle.basePageNavigation(ValidateTitle.java:35)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -168,9 +140,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="PageNavigation">
+                  </a> <!-- PageNavigation -->
+                  <span class="method-name">PageNavigation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,18 +155,33 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(non-restricted@user, nrpassword, NR)">
-                  </a> <!-- basePageNavigation(non-restricted@user, nrpassword, NR) -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="basePageLogin(non-restricted@user, nrpassword, NR)">
+                  </a> <!-- basePageLogin(non-restricted@user, nrpassword, NR) -->
+                  <span class="method-name">basePageLogin</span>
                   <span class="parameters">(non-restricted@user, nrpassword, NR)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(restricted@user, rpassword, R)">
-                  </a> <!-- basePageNavigation(restricted@user, rpassword, R) -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="basePageLogin(restricted@user, rpassword, R)">
+                  </a> <!-- basePageLogin(restricted@user, rpassword, R) -->
+                  <span class="method-name">basePageLogin</span>
                   <span class="parameters">(restricted@user, rpassword, R)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Academy.ValidateTitle</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basePageValidateTitle">
+                  </a> <!-- basePageValidateTitle -->
+                  <span class="method-name">basePageValidateTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,10 +194,11 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Academy.listeners&quot;/&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Validating Title&quot;&gt;
     &lt;classes&gt;
@@ -272,26 +260,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'basePageNavigation')
+data.setCell(0, 1, 'basePageLogin')
 data.setCell(0, 2, 'Academy.HomePage')
-data.setCell(0, 3, 11051);
+data.setCell(0, 3, 12216);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'basePageNavigation')
+data.setCell(1, 1, 'basePageLogin')
 data.setCell(1, 2, 'Academy.HomePage')
-data.setCell(1, 3, 5734);
+data.setCell(1, 3, 5220);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'basePageNavigation')
+data.setCell(2, 1, 'PageNavigation')
 data.setCell(2, 2, 'Academy.ValidateNavBar')
-data.setCell(2, 3, 86);
+data.setCell(2, 3, 97);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'basePageNavigation')
+data.setCell(3, 1, 'basePageValidateTitle')
 data.setCell(3, 2, 'Academy.ValidateTitle')
-data.setCell(3, 3, 42);
+data.setCell(3, 3, 52);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,48 +311,46 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">7617 ms</span>
+                <span class="method-name">basePageValidateTitle</span>
+                <span class="method-start">8965 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">8593 ms</span>
+                <span class="method-start">9026 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">8831 ms</span>
+                <span class="method-start">9273 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation(non-restricted@user, nrpassword, NR)</span>
-                <span class="method-start">10141 ms</span>
+                <span class="method-name">basePageLogin(non-restricted@user, nrpassword, NR)</span>
+                <span class="method-start">10436 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation(restricted@user, rpassword, R)</span>
-                <span class="method-start">21195 ms</span>
+                <span class="method-name">basePageLogin(restricted@user, rpassword, R)</span>
+                <span class="method-start">22656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">26930 ms</span>
+                <span class="method-start">27879 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.ValidateNavBar</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">27133 ms</span>
+                <span class="method-start">28035 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">33336 ms</span>
+                <span class="method-name">PageNavigation</span>
+                <span class="method-start">44087 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">33424 ms</span>
+                <span class="method-start">44185 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -25,14 +25,14 @@ public class ValidateTitle extends base{//inherit base class properties
 	}
 	
 	@Test
-	public void basePageNavigation() throws IOException {
+	public void basePageValidateTitle() throws IOException {
 		
 		
 		
 		//creating object of the class to access methods
 		LandingPage l=new LandingPage(driver);
 		//compare the text with actual text
-	    Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES123");
+	    Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
 	    log.info("Successfully validated Title Title Validation");
 	    	}
 	

@@ -2,30 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-22T00:39:42Z" name="Suite" finished-at="2019-12-22T00:41:05Z" duration-ms="83731">
+  <suite started-at="2019-12-23T19:32:49Z" name="Suite" finished-at="2019-12-23T19:33:26Z" duration-ms="37532">
     <groups>
     </groups>
-    <test started-at="2019-12-22T00:39:42Z" name="Test" finished-at="2019-12-22T00:41:05Z" duration-ms="83731">
+    <test started-at="2019-12-23T19:32:49Z" name="Validating Title" finished-at="2019-12-23T19:32:58Z" duration-ms="9580">
       <class name="Academy.ValidateTitle">
-        <test-method signature="basePageNavigation()[pri:0, instance:Academy.ValidateTitle@6475472c]" started-at="2019-12-22T00:40:21Z" name="basePageNavigation" finished-at="2019-12-22T00:40:21Z" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:Academy.ValidateTitle@1d0d6318]" started-at="2019-12-23T19:32:49Z" name="startUp" finished-at="2019-12-23T19:32:58Z" duration-ms="9366" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
+        </test-method> <!-- startUp -->
+        <test-method signature="basePageValidateTitle()[pri:0, instance:Academy.ValidateTitle@1d0d6318]" started-at="2019-12-23T19:32:58Z" name="basePageValidateTitle" finished-at="2019-12-23T19:32:58Z" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageValidateTitle -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:Academy.ValidateTitle@1d0d6318]" started-at="2019-12-23T19:32:58Z" name="cleanUp" finished-at="2019-12-23T19:32:58Z" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
       </class> <!-- Academy.ValidateTitle -->
+    </test> <!-- Validating Title -->
+    <test started-at="2019-12-23T19:32:58Z" name="Validating Login" finished-at="2019-12-23T19:33:19Z" duration-ms="20396">
       <class name="Academy.HomePage">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:Academy.HomePage@3f07b12c]" started-at="2019-12-22T00:39:42Z" name="startUp" finished-at="2019-12-22T00:39:43Z" duration-ms="1631" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:Academy.HomePage@39ad977d]" started-at="2019-12-23T19:32:58Z" name="startUp" finished-at="2019-12-23T19:32:59Z" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:Academy.ValidateNavBar@4bd1f8dd]" started-at="2019-12-22T00:39:43Z" name="startUp" finished-at="2019-12-22T00:40:01Z" duration-ms="17390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="startUp()[pri:0, instance:Academy.ValidateTitle@6475472c]" started-at="2019-12-22T00:40:01Z" name="startUp" finished-at="2019-12-22T00:40:21Z" duration-ms="20254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@3f07b12c]" started-at="2019-12-22T00:40:21Z" name="basePageNavigation" data-provider="getData" finished-at="2019-12-22T00:40:48Z" duration-ms="27650" status="PASS">
+        <test-method signature="basePageLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@39ad977d]" started-at="2019-12-23T19:32:59Z" name="basePageLogin" data-provider="getData" finished-at="2019-12-23T19:33:13Z" duration-ms="13565" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,8 +47,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@3f07b12c]" started-at="2019-12-22T00:40:48Z" name="basePageNavigation" data-provider="getData" finished-at="2019-12-22T00:41:05Z" duration-ms="16209" status="PASS">
+        </test-method> <!-- basePageLogin -->
+        <test-method signature="basePageLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@39ad977d]" started-at="2019-12-23T19:33:13Z" name="basePageLogin" data-provider="getData" finished-at="2019-12-23T19:33:18Z" duration-ms="5588" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,26 +68,28 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:Academy.HomePage@3f07b12c]" started-at="2019-12-22T00:41:05Z" name="cleanUp" finished-at="2019-12-22T00:41:05Z" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:Academy.ValidateNavBar@4bd1f8dd]" started-at="2019-12-22T00:41:05Z" name="cleanUp" finished-at="2019-12-22T00:41:05Z" duration-ms="184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:Academy.ValidateTitle@6475472c]" started-at="2019-12-22T00:41:05Z" name="cleanUp" finished-at="2019-12-22T00:41:05Z" duration-ms="170" status="PASS">
+        </test-method> <!-- basePageLogin -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:Academy.HomePage@39ad977d]" started-at="2019-12-23T19:33:18Z" name="cleanUp" finished-at="2019-12-23T19:33:19Z" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- Academy.HomePage -->
+    </test> <!-- Validating Login -->
+    <test started-at="2019-12-23T19:33:19Z" name="Validating Navigation Bar" finished-at="2019-12-23T19:33:26Z" duration-ms="7324">
       <class name="Academy.ValidateNavBar">
-        <test-method signature="basePageNavigation()[pri:0, instance:Academy.ValidateNavBar@4bd1f8dd]" started-at="2019-12-22T00:41:05Z" name="basePageNavigation" finished-at="2019-12-22T00:41:05Z" duration-ms="57" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:Academy.ValidateNavBar@5d2a4eed]" started-at="2019-12-23T19:33:19Z" name="startUp" finished-at="2019-12-23T19:33:26Z" duration-ms="7129" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
+        </test-method> <!-- startUp -->
+        <test-method signature="PageNavigation()[pri:0, instance:Academy.ValidateNavBar@5d2a4eed]" started-at="2019-12-23T19:33:26Z" name="PageNavigation" finished-at="2019-12-23T19:33:26Z" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageNavigation -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:Academy.ValidateNavBar@5d2a4eed]" started-at="2019-12-23T19:33:26Z" name="cleanUp" finished-at="2019-12-23T19:33:26Z" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
       </class> <!-- Academy.ValidateNavBar -->
-    </test> <!-- Test -->
+    </test> <!-- Validating Navigation Bar -->
   </suite> <!-- Suite -->
 </testng-results>
