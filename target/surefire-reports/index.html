@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(non-restricted@user, nrpassword, NR)">basePageNavigation(non-restricted@user, nrpassword, NR)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,12 +107,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(restricted@user, rpassword, R)">basePageNavigation(restricted@user, rpassword, R)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(non-restricted@user, nrpassword, NR)">basePageNavigation(non-restricted@user, nrpassword, NR)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Academy.ValidateTitle" class="method navigator-link" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Academy.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(restricted@user, rpassword, R)">basePageNavigation(restricted@user, rpassword, R)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,40 +132,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Academy.HomePage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="basePageNavigation(non-restricted@user, nrpassword, NR)">
-                  </a> <!-- basePageNavigation(non-restricted@user, nrpassword, NR) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(non-restricted@user, nrpassword, NR)</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;http://qaclickacademy.usefedora.com/sign_in&quot;&gt;...&lt;/a&gt; is not clickable at point (1158, 16). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=79.0.3945.88)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Prasuns-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:e5:52b8:5a90:a23d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/8p/9dcxflxx545...}, goog:chromeOptions: {debuggerAddress: localhost:51628}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 14d57abb0b4e13489ef902369ac63797
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at Academy.HomePage.basePageNavigation(HomePage.java:36)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -211,6 +168,14 @@ Session ID: 14d57abb0b4e13489ef902369ac63797
               <span class="class-name">Academy.HomePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basePageNavigation(non-restricted@user, nrpassword, NR)">
+                  </a> <!-- basePageNavigation(non-restricted@user, nrpassword, NR) -->
+                  <span class="method-name">basePageNavigation</span>
+                  <span class="parameters">(non-restricted@user, nrpassword, NR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="basePageNavigation(restricted@user, rpassword, R)">
@@ -279,24 +244,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'basePageNavigation')
 data.setCell(0, 2, 'Academy.HomePage')
-data.setCell(0, 3, 12057);
+data.setCell(0, 3, 27650);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'basePageNavigation')
 data.setCell(1, 2, 'Academy.HomePage')
-data.setCell(1, 3, 7093);
+data.setCell(1, 3, 16209);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'basePageNavigation')
 data.setCell(2, 2, 'Academy.ValidateNavBar')
-data.setCell(2, 3, 92);
+data.setCell(2, 3, 57);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'basePageNavigation')
 data.setCell(3, 2, 'Academy.ValidateTitle')
-data.setCell(3, 3, 50);
+data.setCell(3, 3, 33);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -332,59 +297,57 @@ return data;
               <div class="chronological-class-name">Academy.ValidateNavBar</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">1599 ms</span>
+                <span class="method-start">1631 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.ValidateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startUp</span>
-                <span class="method-start">13062 ms</span>
+                <span class="method-start">19021 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation</span>
-                <span class="method-start">24749 ms</span>
+                <span class="method-start">39283 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.HomePage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">basePageNavigation(non-restricted@user, nrpassword, NR)</span>
-                <span class="method-start">24803 ms</span>
+                <span class="method-start">39320 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation(restricted@user, rpassword, R)</span>
-                <span class="method-start">36871 ms</span>
+                <span class="method-start">66971 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.ValidateNavBar</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation</span>
-                <span class="method-start">43965 ms</span>
+                <span class="method-start">83180 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">44057 ms</span>
+                <span class="method-start">83237 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.ValidateNavBar</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">44275 ms</span>
+                <span class="method-start">83376 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.ValidateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">44451 ms</span>
+                <span class="method-start">83560 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
