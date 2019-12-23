@@ -39,7 +39,7 @@ public class HomePage extends base{//inherit base class properties
 		lp.getUsername().sendKeys(username);
 		lp.getPassword().sendKeys(password);
 		
-		log.info(text);
+		log.info("Login test "+text);
 		lp.getlogin().click();
 		
 		
@@ -62,7 +62,8 @@ public class HomePage extends base{//inherit base class properties
 	@AfterTest
    public void cleanUp() {
 		driver.close();
-		driver.quit();
+		driver=null;
+		
 	}
 	
 

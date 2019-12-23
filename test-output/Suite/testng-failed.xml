@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="Academy.listeners"/>
+  </listeners>
+  <test thread-count="5" name="Validating Title(failed)">
     <classes>
-      <class name="Academy.HomePage">
+      <class name="Academy.ValidateTitle">
         <methods>
           <include name="cleanUp"/>
-          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="startUp"/>
+          <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- Academy.HomePage -->
+      </class> <!-- Academy.ValidateTitle -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Validating Title(failed) -->
 </suite> <!-- Failed suite [Suite] -->

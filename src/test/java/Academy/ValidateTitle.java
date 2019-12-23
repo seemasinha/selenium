@@ -18,9 +18,9 @@ public class ValidateTitle extends base{//inherit base class properties
 	public void startUp() throws IOException {
 		driver=initializeDriver();
 		//driver.get("http://www.qaclickacademy.com");
-		log.info("Driver is initialized");
+		log.info("Driver is initialized for Title Validation");
 		driver.get(prop.getProperty("url"));
-		log.info("Navigated to home page");
+		log.info("Navigated to home page Title Validation ");
 		
 	}
 	
@@ -32,14 +32,14 @@ public class ValidateTitle extends base{//inherit base class properties
 		//creating object of the class to access methods
 		LandingPage l=new LandingPage(driver);
 		//compare the text with actual text
-	    Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
-	    log.info("Successfully validated Title");
+	    Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES123");
+	    log.info("Successfully validated Title Title Validation");
 	    	}
 	
 	@AfterTest
 	public void cleanUp() {
 		driver.close();
-		driver.quit();
+		driver=null;
 	}
 	
 

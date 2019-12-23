@@ -30,7 +30,7 @@ public class ValidateNavBar extends base{//inherit base class properties
 		
 	  //check navigation bar is present
 	    Assert.assertTrue(l.CheckNavigationBar().isDisplayed());
-	    log.info("Displayed");
+	    log.info("Info Navigation Bar Displayed Test");
 	    	
 		
 		
@@ -39,7 +39,7 @@ public class ValidateNavBar extends base{//inherit base class properties
 	public void cleanUp() {
 		
 		driver.close();
-		driver.quit();
+		driver=null;
 	}
 
 }
